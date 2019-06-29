@@ -4,18 +4,29 @@
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/@observablehq/notebook-inspector@1/dist/notebook-inspector-style.css">
 <style>
 body {
-  background-color: #582A72;
+  background-color: #ccc;
 }
 </style>
 <body>
+  <div style="margin: 2rem; text-align: center; color: #333;">
+    <h1>Graffiti Wall Editor</h1>
+    <div>
+      Test your tagging skills here before you tag our wall!
+    </div>
+    <div id="tester"></div>
+  </div>
 <script type="module">
 import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1?module";
 import notebook from "https://api.observablehq.com/d/4244aba5b8151ec7.js";
+const tester = document.querySelector('#tester')
+
 Runtime.load(notebook, variable => {
     if (variable.name === "tester") {
-      const div = document.createElement("div");
-      document.body.appendChild(div);
-      return new Inspector(div);
+      Object.assign(tester.style, {
+        margin: '0 auto', 
+        width: '90%'
+      })
+      return new Inspector(tester);
     }
 });
 </script>
