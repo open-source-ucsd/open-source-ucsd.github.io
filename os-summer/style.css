@@ -1,9 +1,28 @@
 body {
-  background-color: #6BA5D8;
+  background-color: #74A2D5;
+  font-size: 1.2rem;
 }
+
 a{
-  color:#F77706;
+  color:#E8A87C;
 }
+
+a:hover {
+  text-decoration: none;
+  color: #E27D60
+}
+
+h2,h3 {
+  color: #fdfdfd;
+}
+
+.active {
+	color: #fdfdfd
+}
+
 img{
   max-width: 100%;
+  -webkit-box-shadow: 2px 4px 11px -4px rgba(0,0,0,0.63);
+  -moz-box-shadow: 2px 4px 11px -4px rgba(0,0,0,0.63);
+  box-shadow: 2px 4px 11px -4px rgba(0,0,0,0.63);
 }
