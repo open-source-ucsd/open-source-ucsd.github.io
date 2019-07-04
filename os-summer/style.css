@@ -1,23 +1,28 @@
 body {
-  background-color: #74A2D5;
+  background-color: #EAE7DC;
   font-size: 1.2rem;
 }
 
 a{
-  color:#E8A87C;
+  color: #E98074;
 }
 
 a:hover {
   text-decoration: none;
-  color: #E27D60
+  color: #E85A4F;
 }
 
 h2,h3 {
-  color: #fdfdfd;
+  color: #8E8D8A;
 }
 
 .active {
-	color: #fdfdfd
+	color: #8E8D8A;
+}
+
+.nav-tabs .nav-link.active{
+  background-color: #E98074 !important;
+  color: #EAE7DC !important;
 }
 
 img{
@@ -25,4 +30,9 @@ img{
   -webkit-box-shadow: 2px 4px 11px -4px rgba(0,0,0,0.63);
   -moz-box-shadow: 2px 4px 11px -4px rgba(0,0,0,0.63);
   box-shadow: 2px 4px 11px -4px rgba(0,0,0,0.63);
+}
+
+.links {
+
+  font-size: 1.8rem;
 }
